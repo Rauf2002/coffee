@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url("./coffee.jpg")
+}
+header {
+    width: 100%;
+    height: 100px;
+}
+header section:first-child {
+    width: 100%;
+    height: 30px;
+    display:flex;
+    justify-content: flex-end;
+    padding-right: 170px;
+    background-color: black;
+    padding-top: 7px;
+}
+header section:first-child i:first-child {
+    padding-right:20px;
+}
+header section:first-child i {
+    color: aliceblue
+}
+header section:nth-child(2) {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content:space-around;
+}
+header section:nth-child(2) {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.096)
+}
+header section:nth-child(2) .logo  {
+    width: 35%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+}
+header section:nth-child(2) .logo i {
+    color: red;
+    font-size: 40px;
+}
+header section:nth-child(2) .logo h3 {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.877);
+    font-size:30px; 
+    padding-left: 30px;
+    font-weight: 100
+}
+header section:nth-child(2) .menu {
+    height: 70px;
+    width: 65%;
+    display: flex;
+} 
+header section:nth-child(2) .menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header section:nth-child(2) .menu ul li {
+    padding: 20px;
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0.493)
+}
+header section:nth-child(2) .menu ul li:hover {
+    color: red;
+    text-decoration: underline;
+}
+main {
+    width: 100%;
+    height: 500px;
+}
+main section:first-child {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main section:first-child h1 {
+    color: white;
+    font-style: italic;
+    font-size: 100px;
+    margin-bottom: 0px;
+    border-bottom: 3px solid white;
+    padding-bottom: 40px;
+}
+main section:nth-child(2) {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+}
+main section:nth-child(2) h2 {
+    letter-spacing: 2px;
+    color: white;
+    font-size: 35px;
+    border-top:1px solid white;
+    padding-top: 40px;
+}
+main section:last-child  {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main section:last-child p {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
