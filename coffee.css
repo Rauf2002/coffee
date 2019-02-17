@@ -1,14 +1,11 @@
 * {
     box-sizing: border-box;
 }
-body {
-    background-image: url("./coffee.jpg")
-}
 header {
     width: 100%;
-    height: 100px;
+    height: 30px;
 }
-header section:first-child {
+header section{
     width: 100%;
     height: 30px;
     display:flex;
@@ -17,72 +14,75 @@ header section:first-child {
     background-color: black;
     padding-top: 7px;
 }
-header section:first-child i:first-child {
+header section i:first-child {
     padding-right:20px;
 }
-header section:first-child i {
+header section i {
     color: aliceblue
 }
-header section:nth-child(2) {
+/* Header Ends */
+/* Main Starts */
+main{
     width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content:space-around;
 }
-header section:nth-child(2) {
+main .top {
+    background-image: url("./coffee.jpg");
+    height: 900px;
+}
+main  .top .transparent  {
     width: 100%;
-    height: 70px;
-    background-color: rgba(255, 255, 255, 0.096)
-}
-header section:nth-child(2) .logo  {
-    width: 35%;
     height: 70px;
     display: flex;
     justify-content: center;
     align-items:center; 
+    background-color: rgba(255, 255, 255, 0.096)
 }
-header section:nth-child(2) .logo i {
+main .top .transparent .logo {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height:70px;
+}
+main .top  .transparent .logo i {
     color: red;
     font-size: 40px;
+    padding-left: 110px;
 }
-header section:nth-child(2) .logo h3 {
+main .top .transparent .logo h3 {
     font-style: italic;
     color: rgba(255, 255, 255, 0.877);
     font-size:30px; 
     padding-left: 30px;
     font-weight: 100
 }
-header section:nth-child(2) .menu {
+main  .top  .transparent .menu {
     height: 70px;
-    width: 65%;
+    width: 60%;
     display: flex;
 } 
-header section:nth-child(2) .menu ul {
+main  .top  .transparent .menu ul {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-header section:nth-child(2) .menu ul li {
+main .top  .transparent .menu ul li {
     padding: 20px;
     list-style-type: none;
     color: rgba(255, 255, 255, 0.493)
 }
-header section:nth-child(2) .menu ul li:hover {
+main  .top .transparent  .menu ul li:hover {
     color: red;
     text-decoration: underline;
 }
-main {
+main  .top section:nth-child(2) {
     width: 100%;
-    height: 500px;
-}
-main section:first-child {
-    width: 100%;
-    height: 250px;
+    height: 280px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-main section:first-child h1 {
+main  .top section:nth-child(2) h1 {
     color: white;
     font-style: italic;
     font-size: 100px;
@@ -90,20 +90,20 @@ main section:first-child h1 {
     border-bottom: 3px solid white;
     padding-bottom: 40px;
 }
-main section:nth-child(2) {
+main  .top section:nth-child(3) {
     width: 100%;
     height: 125px;
     display: flex;
     justify-content: center;
 }
-main section:nth-child(2) h2 {
+main .top  section:nth-child(3) h2 {
     letter-spacing: 2px;
     color: white;
     font-size: 35px;
     border-top:1px solid white;
     padding-top: 40px;
 }
-main section:last-child  {
+main .top section:last-child  {
     width: 100%;
     height: 125px;
     display: flex;
@@ -111,7 +111,7 @@ main section:last-child  {
     align-items: center;
     flex-direction: column;
 }
-main section:last-child p {
+main .top  section:last-child p {
     width: 100%;
     height: 125px;
     display: flex;
@@ -119,7 +119,225 @@ main section:last-child p {
     align-items: center;
     color: white;
 }
+main .categories {
+    width: 100%;
+}
+main .categories .text {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+main .categories .text h1 {
+    font-size: 70px;
+    border-bottom: 20px double black;
+    font-weight: 300;
+    font-family: Verdana;
+}
+main .categories .photos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+main .categories .photos section  {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+main .categories .photos section img {
+    height: 440px;
+    width: 480px;
+}
+main .categories .photos section .centered{
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 120px;
+    left: 100px;
+    font-family: Verdana;
+    font-weight: 100;
+}
+main .categories .photos section .centered h1 {
+    font-size: 45px;
+    border-bottom: 7px solid white;
+    margin-bottom: 8px;
+}
+main .categories .photos section .centered p {
+    border-top: 3px solid white;
+    padding-top: 10px;
+    margin-top: 0px;
+}
+main .categories .photos section .centered:hover {
+    color:pink;
+}
+main .products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main .products .text2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+main .products .text2 h1 {
+    font-size: 70px;
+    border-bottom: 20px double black;
+    font-weight: 300;
+    font-family: Verdana;
+}
+main .products .photos2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .products .photos2 section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 60px;
+    position: relative;
+}
+main .products .photos2 section img {
+    width: 200px;
+    height: 210px;
+}
+main .products .photos2 section  p:nth-child(2) {
+    color: grey;
+    font-family: Verdana;
+    margin: 12px;
+    font-weight: 200
+}
+main .products .photos2 section p:nth-child(3) {
+    font-style: italic;
+    font-weight: 800;
+}
+main .products .photos2 section p:nth-child(3) del {
+    color: rgb(226, 96, 117)
+}
+main .products .photos2 section h4 {
+    background-color: rgb(226, 96, 117);
+    color:white;
+    border: 8px solid rgb(226, 96, 117);
+    border-radius: 7px;
+}
+main .products .photos2 section .icons  {
+    position: absolute;
+    top: 85px;
+    visibility: hidden;
+}
+main .products .photos2 section h4:hover {
+    background-color: rgb(197, 45, 71);
+    border: 8px solid rgb(197, 45, 71);
+    border-radius: 7px;
+}
+main .test {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main .test .title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+}
+main .test .title h2 {
+    font-size: 70px;
+    border-bottom: 20px double black;
+    font-weight: 300;
+    font-family: Verdana;
+}
+main .test .paragraph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main .test .paragraph p {
+    font-weight: 500;
+    font-family: Verdana;
+    max-width: 640px;
+    color: rgb(126, 122, 122)
+}
+main .test .paragraph h3 {
+    margin-bottom: 0px;
+    font-size: 35px;
+    font-family: Verdana;
+    font-weight: 50
+}
+main .test .paragraph h4 {
+    color: rgb(126, 122, 122);
+    font-weight: 50;
+    font-family: Verdana 
+}
+main .test .dots {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+main .test .dots i {
+    padding:7px;
+    font-size: 13px;
+}
+main .photos3 {
+    width: 100%;
+    display: flex;
+    
+}
+main .photos3 section  {
+    width: 25%;
+}
+main .photos3 section img {
+    width: 100%;
+    height: 390px;
+}
+/* Main Ends */
+/* Footer Starts */
+footer {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black
+}
+footer h2 {
+    color: white;
+    font-family: Verdana;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+footer p {
+    color: white;
+    max-width: 350px;
+    font-size: 13px;
+    font-weight: 50;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
 
+
+
+
+  
+
+
+
+
+
+ 
 
 
 
